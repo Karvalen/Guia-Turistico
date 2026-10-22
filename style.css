@@ -532,3 +532,63 @@ body > footer nav a:hover {
         width: 100%;
     }
 }
+
+#guia .planejamento-viagem {
+    margin: 0 0 30px;
+    padding: 25px;
+    background-color: var(--branco);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+    border-left: 5px solid var(--terracota);
+}
+
+#guia .planejamento-cabecalho {
+    margin-bottom: 22px;
+}
+
+#guia .planejamento-cabecalho h3 {
+    margin-bottom: 8px;
+}
+
+#guia .planejamento-cabecalho p {
+    margin-bottom: 0;
+}
+
+#guia .grade-planejamento {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+#guia .cartao-planejamento {
+    margin: 0;
+    padding: 20px;
+    background-color: var(--creme);
+    border: 1px solid var(--verde-salvia);
+    border-bottom: 4px solid var(--terracota);
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+#guia .cartao-planejamento h4 {
+    margin-bottom: 8px;
+}
+
+#guia .cartao-planejamento p {
+    margin-bottom: 0;
+}
+
+/* Adaptação para celulares */
+@media (max-width: 550px) {
+    #guia .planejamento-viagem {
+        padding: 18px;
+    }
+
+    #guia .grade-planejamento {
+        grid-template-columns: 1fr;
+    }
+
+    #guia .cartao-planejamento {
+        padding: 16px;
+    }
+}
