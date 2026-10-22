@@ -302,7 +302,65 @@
                     Via Roma, 100 — Roma, Itália
                 </p>
             </address>
-        </section>
+            
+            <div class="formulario-contato">
+                <h3>Envie sua mensagem</h3>
+                <p>Preencha os campos abaixo para tirar dúvidas ou planejar sua viagem a Roma.</p>
+
+                <form action="#" method="post">
+                    <div class="campo-formulario">
+                        <label for="nome">Nome completo *</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            autocomplete="name"
+                            placeholder="Digite seu nome completo"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="email">E-mail *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            placeholder="exemplo@email.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto">
+                            <option value="">Selecione um assunto</option>
+                            <option value="passeios">Excursões e visitas guiadas</option>
+                            <option value="hospedagem">Hotéis e hospedagem</option>
+                            <option value="gastronomia">Restaurantes e gastronomia</option>
+                            <option value="outros">Outras dúvidas</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="mensagem">Mensagem *</label>
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            rows="5"
+                            placeholder="Escreva sua mensagem aqui"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <p class="aviso-formulario">* Campos obrigatórios.</p>
+
+                    <button type="submit">Enviar mensagem</button>
+                </form>
+            </div>
+
+            </section>
 
     </main>
 

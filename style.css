@@ -450,3 +450,85 @@ body > footer nav a:hover {
         animation-duration: 0.01ms !important;
     }
 }
+.formulario-contato {
+    background-color: var(--branco);
+    padding: 30px;
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+    border-left: 5px solid var(--terracota);
+    margin-bottom: 40px;
+}
+
+.formulario-contato h3 {
+    margin-bottom: 10px;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.campo-formulario label {
+    font-weight: bold;
+    color: var(--texto);
+}
+
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #8a8677;
+    border-radius: 8px;
+    background-color: var(--creme);
+    color: var(--texto);
+}
+
+.campo-formulario textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.campo-formulario input:focus-visible,
+.campo-formulario select:focus-visible,
+.campo-formulario textarea:focus-visible {
+    outline: 3px solid #8b5e34;
+    outline-offset: 3px;
+}
+
+.aviso-formulario {
+    font-size: 0.9rem;
+    color: var(--texto-suave);
+}
+
+.formulario-contato button {
+    background-color: #69502f;
+    color: var(--branco);
+    border: none;
+    border-radius: 8px;
+    padding: 13px 24px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-contato button:hover {
+    background-color: #4a3822;
+}
+
+.formulario-contato button:focus-visible {
+    outline: 3px solid #8b5e34;
+    outline-offset: 4px;
+}
+
+/* Adaptação para celulares */
+@media (max-width: 550px) {
+    .formulario-contato {
+        padding: 18px;
+    }
+
+    .formulario-contato button {
+        width: 100%;
+    }
+}
