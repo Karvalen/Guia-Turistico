@@ -1,24 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta
         name="description"
         content="Guia turístico de Roma, Itália, com informações sobre pontos turísticos, restaurantes, hotéis, excursões e visitas guiadas."
     >
-
-    <title>Roma Viva Turismo | Guia Turístico de Roma</title>
+    <title>Turistando Roma | Guia Turístico de Roma</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Cabeçalho principal -->
     <header>
         <div>
-            <h1>Roma Viva Turismo</h1>
-            <p>Seu guia para descobrir Roma, Itália</p>
+            <h1>Turistando Roma</h1>
+            <p>Seu guia para conhecer Roma, Itália</p>
         </div>
 
         <nav aria-label="Navegação principal">
@@ -30,21 +29,18 @@
         </nav>
     </header>
 
-
     <main>
 
-        <!-- Imagem de destaque -->
         <section aria-labelledby="titulo-destaque">
             <h2 id="titulo-destaque">Descubra Roma</h2>
 
             <figure>
                 <img
                     src="imagens/roma.jpg"
-                    alt="Vista panorâmica de Roma com o Coliseu e construções históricas ao fundo"
+                    alt="Vista panorâmica de Roma"
                     width="1200"
                     height="600"
                 >
-
                 <figcaption>
                     Roma: história, cultura, gastronomia e experiências inesquecíveis.
                 </figcaption>
@@ -56,28 +52,21 @@
             </p>
         </section>
 
-
-        <!-- Guia turístico -->
         <section id="guia" aria-labelledby="titulo-guia">
             <header>
                 <h2 id="titulo-guia">Guia Turístico</h2>
-
                 <p>
                     Encontre informações para planejar sua viagem e conhecer
                     melhor a história e a cultura de Roma.
                 </p>
             </header>
 
-
-            <!-- Planejamento -->
             <article>
                 <h3>Planeje sua viagem</h3>
-
                 <p>
                     Consulte informações sobre a melhor época para visitar Roma,
                     transporte, hospedagem, alimentação e organização do roteiro.
                 </p>
-
                 <ul>
                     <li>Melhores épocas para viajar</li>
                     <li>Transporte público</li>
@@ -87,24 +76,18 @@
                 </ul>
             </article>
 
-
-            <!-- História -->
             <article>
                 <h3>História de Roma</h3>
-
                 <p>
                     Conheça a história de uma das cidades mais importantes da
                     Europa, desde a Roma Antiga até os dias atuais.
                 </p>
-
                 <p>
                     Explore informações sobre o Império Romano, monumentos
                     históricos, arte, arquitetura e cultura italiana.
                 </p>
             </article>
 
-
-            <!-- Fotografias -->
             <section aria-labelledby="titulo-fotos">
                 <h3 id="titulo-fotos">Fotografias de Roma</h3>
 
@@ -139,8 +122,6 @@
                 </figure>
             </section>
 
-
-            <!-- Pontos turísticos -->
             <section aria-labelledby="titulo-atracoes">
                 <h3 id="titulo-atracoes">Pontos turísticos</h3>
 
@@ -172,8 +153,6 @@
                 </article>
             </section>
 
-
-            <!-- Serviços -->
             <section aria-labelledby="titulo-servicos">
                 <h3 id="titulo-servicos">Onde ficar e comer</h3>
 
@@ -201,104 +180,17 @@
                     </p>
                 </article>
             </section>
-
         </section>
 
-
-        <!-- Excursões e visitas guiadas -->
         <section id="passeios" aria-labelledby="titulo-passeios">
-
             <header>
-                <h2 id="titulo-passeios">
-                    Excursões e Visitas Guiadas
-                </h2>
-
+                <h2 id="titulo-passeios">Excursões e Visitas Guiadas</h2>
                 <p>
-                    Encontre passeios de acordo com seu tempo, orçamento,
-                    avaliação e necessidades de acessibilidade.
+                    Conheça opções de passeios de acordo com seu tempo,
+                    orçamento e necessidades de acessibilidade.
                 </p>
             </header>
 
-
-            <!-- Filtros -->
-            <form aria-labelledby="titulo-filtros">
-
-                <fieldset>
-                    <legend id="titulo-filtros">Filtrar passeios</legend>
-
-                    <div>
-                        <label for="duracao">Duração:</label>
-
-                        <select id="duracao" name="duracao">
-                            <option value="">Todas</option>
-                            <option value="curta">Até 2 horas</option>
-                            <option value="media">2 a 4 horas</option>
-                            <option value="longa">Mais de 4 horas</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label for="preco">Preço:</label>
-
-                        <select id="preco" name="preco">
-                            <option value="">Todos</option>
-                            <option value="economico">Até €30</option>
-                            <option value="medio">€30 a €70</option>
-                            <option value="premium">Mais de €70</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label for="avaliacao">Avaliação mínima:</label>
-
-                        <select id="avaliacao" name="avaliacao">
-                            <option value="">Todas</option>
-                            <option value="3">3 estrelas</option>
-                            <option value="4">4 estrelas</option>
-                            <option value="5">5 estrelas</option>
-                        </select>
-                    </div>
-
-                    <fieldset>
-                        <legend>Acessibilidade</legend>
-
-                        <label>
-                            <input
-                                type="checkbox"
-                                name="acessibilidade"
-                                value="cegueira"
-                            >
-                            Recursos para pessoas cegas
-                        </label>
-
-                        <label>
-                            <input
-                                type="checkbox"
-                                name="acessibilidade"
-                                value="cadeirante"
-                            >
-                            Acessível para cadeirantes
-                        </label>
-
-                        <label>
-                            <input
-                                type="checkbox"
-                                name="acessibilidade"
-                                value="surdez"
-                            >
-                            Recursos para pessoas surdas
-                        </label>
-                    </fieldset>
-
-                    <button type="submit">
-                        Buscar passeios
-                    </button>
-
-                </fieldset>
-            </form>
-
-
-            <!-- Lista de passeios -->
             <div>
                 <article>
                     <header>
@@ -323,7 +215,6 @@
                     </footer>
                 </article>
 
-
                 <article>
                     <header>
                         <h3>Roma Histórica a Pé</h3>
@@ -346,7 +237,6 @@
                         </p>
                     </footer>
                 </article>
-
 
                 <article>
                     <header>
@@ -371,14 +261,10 @@
                     </footer>
                 </article>
             </div>
-
         </section>
 
-
-        <!-- Informações adicionais -->
         <aside aria-labelledby="titulo-dicas">
             <h2 id="titulo-dicas">Dicas para sua viagem</h2>
-
             <ul>
                 <li>Reserve atrações concorridas com antecedência.</li>
                 <li>Utilize o transporte público para percorrer a cidade.</li>
@@ -387,19 +273,14 @@
             </ul>
         </aside>
 
-
-        <!-- Contato -->
         <section id="contato" aria-labelledby="titulo-contato">
-
             <header>
                 <h2 id="titulo-contato">Entre em contato</h2>
-
                 <p>
                     Nossa equipe está disponível para ajudar você a planejar
                     sua viagem para Roma.
                 </p>
             </header>
-
 
             <address>
                 <p>
@@ -421,78 +302,13 @@
                     Via Roma, 100 — Roma, Itália
                 </p>
             </address>
-
-
-            <!-- Formulário de contato -->
-            <form action="#" method="post">
-
-                <fieldset>
-                    <legend>Envie sua mensagem</legend>
-
-                    <div>
-                        <label for="nome">Nome:</label>
-                        <input
-                            type="text"
-                            id="nome"
-                            name="nome"
-                            autocomplete="name"
-                            required
-                        >
-                    </div>
-
-                    <div>
-                        <label for="email">E-mail:</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            autocomplete="email"
-                            required
-                        >
-                    </div>
-
-                    <div>
-                        <label for="assunto">Assunto:</label>
-
-                        <select id="assunto" name="assunto">
-                            <option value="">Selecione</option>
-                            <option value="planos">Planos de viagem</option>
-                            <option value="precos">Preços</option>
-                            <option value="hospedagem">Hospedagem</option>
-                            <option value="passagens">Passagens aéreas</option>
-                            <option value="passeios">Passeios e excursões</option>
-                            <option value="outros">Outros</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label for="mensagem">Mensagem:</label>
-
-                        <textarea
-                            id="mensagem"
-                            name="mensagem"
-                            rows="6"
-                            required
-                        ></textarea>
-                    </div>
-
-                    <button type="submit">
-                        Enviar mensagem
-                    </button>
-
-                </fieldset>
-
-            </form>
-
         </section>
 
     </main>
 
-
-    <!-- Rodapé -->
     <footer>
         <p>
-            &copy; 2026 Roma Viva Turismo. Todos os direitos reservados.
+            &copy; 2026 Turistando Roma. Todos os direitos reservados.
         </p>
 
         <nav aria-label="Navegação do rodapé">
